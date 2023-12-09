@@ -18,9 +18,9 @@ void loop() {
   // put your main code here, to run repeatedly:
   int sensorData=  analogRead(sensorPin);//0-23
   //Serial.println(sensorData);
-  if(sensorData<350){
+  if(sensorData<450){
     moveSerovo(500);
-  } else if (sensorData<450) {
+  } else if (sensorData<550) {
     moveSerovo(1000);
   }else if (sensorData<650) {
     moveSerovo(2000);
